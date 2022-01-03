@@ -16,6 +16,10 @@ export async function addNumbers(a: number, b: number) {
   return a + b;
 }
 
+export function subtract(a: number, b: number) {
+  a > b ? a - b : b - a;
+}
+
 //== Run the program ==//
 (async () => {
   console.log(await addNumbers(3, 4));
